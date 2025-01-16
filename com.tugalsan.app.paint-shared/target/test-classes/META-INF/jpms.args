@@ -1,4 +1,0 @@
---patch-module
-com.tugalsan.app.paint.shared=_
---add-reads
-com.tugalsan.app.paint.shared=ALL-UNNAMED

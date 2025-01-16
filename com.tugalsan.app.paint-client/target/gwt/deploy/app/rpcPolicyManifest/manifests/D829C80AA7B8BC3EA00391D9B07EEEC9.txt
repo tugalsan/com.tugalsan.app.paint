@@ -1,2 +1,0 @@
-serviceClass: com.tugalsan.api.servlet.gwt.client.TGS_SGWTServiceInterface
-path: A323B2DE02481CC1855B207BF1134D41.gwt.rpc
