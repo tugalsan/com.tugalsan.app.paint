@@ -14,9 +14,9 @@ import com.tugalsan.api.servlet.gwt.client.TGC_SGWTCalller;
 import com.tugalsan.lib.boot.client.*;
 import com.tugalsan.app.paint.sg.*;
 
-public class AppModuleEcho extends TGC_LibBootModulePanel {
+public class AppModuleCanvas extends TGC_LibBootModulePanel {
 
-    final private static TGC_Log d = TGC_Log.of(AppModuleEcho.class);
+    final private static TGC_Log d = TGC_Log.of(AppModuleCanvas.class);
 
     @Override
     public String getBrowserTitle() {
@@ -96,6 +96,8 @@ public class AppModuleEcho extends TGC_LibBootModulePanel {
     @Override
     public void configLayout() {
         Integer[] columnPercent = {25, 25, 25};
+        
+        
         Widget[] widgets = {
             tbEchoInput, btnEcho, lblEchoOutput
         };

@@ -66,7 +66,7 @@ public class AppModuleDefault extends TGC_LibBootModulePanel {
                     TGS_LibResourceUtils.png(TGS_LibScaleMemUtils.database().app + "-col-add"), null,
                     "Echo",
                     () -> TGC_BrowserWindowUtils.openNew(
-                            App.route.setMdl(AppModuleEcho.class.getSimpleName()).toUrl())
+                            App.route.setMdl(AppModuleCanvas.class.getSimpleName()).toUrl())
             ));
         });
         tbInput = pack.value0;

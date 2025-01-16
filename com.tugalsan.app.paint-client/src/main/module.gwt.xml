@@ -87,10 +87,5 @@
     <!-- JS-SUPPORT -->
     <!-- <set-property name="user.agent" value="ie10,gecko1_8,safari" /> -->
     <set-property name="user.agent" value="safari" />
-	
-	<!-- ADDONS -->
-        <set-configuration-property name='xsiframe.failIfScriptTag' value='FALSE'/>
-    <inherits name='com.google.gwt.json.JSON'/>
-	<script src='raphael.js' /><!-- for no debug put -min -->
 
 </module>

@@ -24,8 +24,6 @@ public class App implements EntryPoint {
     public static TGS_LibLoginCard loginCard;
 
     public void onModuleLoad() {
-        Thread.currentThread().interrupt();
-
         TGC_LibBootUtils.onModuleLoad(route, (warVersion, domainCard, runAcc2Url) -> {
             TGC_LibLoginCardUtils.async(loginCard -> {
                 if (!loginCard.userAdmin) {
@@ -46,7 +44,7 @@ public class App implements EntryPoint {
             });
         },
                 new AppModuleDefault(),
-                new AppModuleEcho()
+                new AppModuleCanvas()
         );
     }
 }

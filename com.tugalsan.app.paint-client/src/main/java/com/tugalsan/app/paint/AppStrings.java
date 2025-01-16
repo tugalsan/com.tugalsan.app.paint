@@ -6,9 +6,9 @@ import com.tugalsan.api.charset.client.TGS_CharSetLocaleTypes;
 public class AppStrings {
 
     public static String TITLE_AppModuleDefault() {
-        return TGS_CharSetCast.current().localType.equals(TGS_CharSetLocaleTypes.TURKISH) ? "Paint" : "Resim";
+        return TGS_CharSetCast.current().localType.equals(TGS_CharSetLocaleTypes.TURKISH) ? "Resim" : "Paint";
     }
     public static String TITLE_AppModuleEcho() {
-        return TGS_CharSetCast.current().localType.equals(TGS_CharSetLocaleTypes.TURKISH) ? "Eko" : "Echo";
+        return TGS_CharSetCast.current().localType.equals(TGS_CharSetLocaleTypes.TURKISH) ? "Tuval" : "Canvas";
     }
 }
