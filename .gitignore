@@ -1,0 +1,5 @@
+/target/*
+/com.tugalsan.app.database-shared/target/*
+/com.tugalsan.app.database-client/target/*
+/com.tugalsan.app.database-server/target/*
+/com.tugalsan.app.database-shared/target

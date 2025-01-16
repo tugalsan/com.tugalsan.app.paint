@@ -1,0 +1,67 @@
+<module rename-to="app">
+  <inherits name="com.google.gwt.user.User"/>
+  <inherits name="com.google.gwt.i18n.I18N"/>
+  <extend-property values="tr,en" name="locale"/>
+  <set-property name="locale" value="tr,en"/>
+  <set-property-fallback name="locale" value="tr"/>
+  <inherits name="com.google.gwt.i18n.CldrLocales"/>
+  <inherits name="com.google.gwt.http.HTTP"/>
+  <inherits name="com.google.gwt.json.JSON"/>
+  <inherits name="com.google.gwt.xml.XML"/>
+  <inherits name="com.google.gwt.junit.JUnit"/>
+  <inherits name="com.tugalsan.api.file.common.module"/>
+  <inherits name="com.tugalsan.api.unsafe.module"/>
+  <inherits name="com.tugalsan.lib.boot.module"/>
+  <inherits name="com.tugalsan.lib.login.module"/>
+  <inherits name="com.tugalsan.lib.route.module"/>
+  <inherits name="com.tugalsan.lib.domain.module"/>
+  <inherits name="com.tugalsan.lib.acsrf.module"/>
+  <inherits name="com.tugalsan.lib.scale.module"/>
+  <inherits name="com.tugalsan.lib.resource.module"/>
+  <inherits name="com.tugalsan.api.stream.module"/>
+  <inherits name="com.tugalsan.api.sql.cell.module"/>
+  <inherits name="com.tugalsan.api.sql.col.typed.module"/>
+  <inherits name="com.tugalsan.api.sql.basic.module"/>
+  <inherits name="com.tugalsan.lib.rql.module"/>
+  <inherits name="com.tugalsan.lib.rql.servlet.module"/>
+  <inherits name="com.tugalsan.lib.scale.module"/>
+  <inherits name="com.tugalsan.lib.rql.module"/>
+  <inherits name="com.tugalsan.api.network.module"/>
+  <inherits name="com.tugalsan.api.servlet.gwt.module"/>
+  <inherits name="com.tugalsan.api.charset.module"/>
+  <inherits name="com.tugalsan.api.sql.col.typed.module"/>
+  <inherits name="com.tugalsan.api.sql.cell.module"/>
+  <inherits name="com.tugalsan.api.clone.module"/>
+  <inherits name="com.tugalsan.api.js.module"/>
+  <inherits name="com.tugalsan.api.hex.module"/>
+  <inherits name="com.tugalsan.api.bytes.module"/>
+  <inherits name="com.tugalsan.api.color.module"/>
+  <inherits name="com.tugalsan.api.random.module"/>
+  <inherits name="com.tugalsan.api.servlet.url.module"/>
+  <inherits name="com.tugalsan.api.math.module"/>
+  <inherits name="com.tugalsan.api.thread.module"/>
+  <inherits name="com.tugalsan.api.list.module"/>
+  <inherits name="com.tugalsan.api.crypto.module"/>
+  <inherits name="com.tugalsan.api.shape.module"/>
+  <inherits name="com.tugalsan.api.cast.module"/>
+  <inherits name="com.tugalsan.api.time.module"/>
+  <inherits name="com.tugalsan.api.icon.module"/>
+  <inherits name="com.tugalsan.api.tuple.module"/>
+  <inherits name="com.tugalsan.api.file.sound.module"/>
+  <inherits name="com.tugalsan.api.file.html.module"/>
+  <inherits name="com.tugalsan.api.function.module"/>
+  <inherits name="com.tugalsan.api.string.module"/>
+  <inherits name="com.tugalsan.api.gui.module"/>
+  <inherits name="com.tugalsan.api.log.module"/>
+  <inherits name="com.tugalsan.api.url.module"/>
+  <inherits name="com.tugalsan.api.storage.local.module"/>
+  <inherits name="com.tugalsan.api.storage.session.module"/>
+  <inherits name="com.tugalsan.api.gwt.jdk.module"/>
+  <inherits name="com.tugalsan.api.union.module"/>
+  <source path=""/>
+  <entry-point class="com.tugalsan.app.paint.App"/>
+  <set-property name="user.agent" value="safari"/>
+  <set-configuration-property name="xsiframe.failIfScriptTag" value="FALSE"/>
+  <inherits name="com.google.gwt.json.JSON"/>
+  <script src="raphael.js"/>
+</module>

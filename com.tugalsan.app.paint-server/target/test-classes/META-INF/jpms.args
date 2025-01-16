@@ -1,0 +1,4 @@
+--patch-module
+com.tugalsan.app.paint.server=_
+--add-reads
+com.tugalsan.app.paint.server=ALL-UNNAMED
