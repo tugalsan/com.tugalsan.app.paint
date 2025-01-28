@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.google.jsinterop</groupId>
             <artifactId>base</artifactId>
-            <version>1.0.1</version><!-- 1.0.0 was working -->
+            <version>1.0.3</version><!-- 1.0.0 was working -->
         </dependency>
         <dependency>
             <groupId>org.gwtproject</groupId>
