@@ -28,7 +28,7 @@ public class AppServlet implements ServletContextListener {
     public void contextInitialized(ServletContextEvent evt) {
         APP_NAME = TS_TomcatPathUtils.getWarNameLabel(evt);
         TS_LogUtils.MAP = txt -> TGS_StringUtils.cmn().concat("[", APP_NAME, "] ", txt);
-        TS_SGWTWebServlet.killTrigger = TS_SURLWebServlet.killTrigger = TS_ThreadSyncTrigger.of();
+        var contextKillTrigger = TS_SURLWebServlet.killTrigger = TS_ThreadSyncTrigger.of();
         var appName = TS_TomcatPathUtils.getWarNameLabel(evt);
         var pathServletConfig = TS_LibBootPathUtils.dirDat().value().resolve("cfg").resolve(appName);
         var u_sConfig = TS_SGWTConfig.of(pathServletConfig, appName);
@@ -37,7 +37,7 @@ public class AppServlet implements ServletContextListener {
             return;
         }
         TS_SGWTWebServlet.config = u_sConfig.value();
-        TS_LibBootUtils.contextInitializedAsyncRun(TS_SURLWebServlet.killTrigger,
+        TS_LibBootUtils.contextInitializedAsyncRun(contextKillTrigger,
                 Duration.ofMinutes(10),
                 evt, "autosqlweb", "ASW",
                 favIconSpi, favIconBug,
