@@ -2,7 +2,6 @@ package com.tugalsan.app.paint;
 
 import com.google.gwt.user.client.ui.*;
 import com.tugalsan.api.file.html.client.*;
-import com.tugalsan.api.function.client.TGS_Func;
 import com.tugalsan.api.gui.client.click.*;
 import com.tugalsan.api.gui.client.focus.*;
 import com.tugalsan.api.gui.client.key.*;
@@ -73,7 +72,7 @@ public class AppModuleCanvas extends TGC_LibBootModulePanel {
     public void configInit() {
     }
 
-    final TGS_Func onEcho = () -> {
+    final TGS_FuncMTUCE onEcho = () -> {
         TGC_SGWTCalller.async(new AppSGFEcho(tbEchoInput.getText()), reply -> {
             d.cr("onEcho", "repy", reply.getOutput_msg());
         });

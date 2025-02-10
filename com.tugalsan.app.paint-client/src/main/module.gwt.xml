@@ -22,7 +22,6 @@
     
     <!-- ADDON-TUGALSAN -->
     <inherits name="com.tugalsan.api.file.common.module"/>
-    <inherits name="com.tugalsan.api.unsafe.module"/>
     <inherits name="com.tugalsan.lib.boot.module"/>
     <inherits name="com.tugalsan.lib.login.module"/>
     <inherits name="com.tugalsan.lib.route.module"/>
