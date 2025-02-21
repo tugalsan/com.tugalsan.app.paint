@@ -23,7 +23,7 @@ package com.tugalsan.app.paint;
  */
 public class PathBuilder {
 
-  private StringBuffer s = new StringBuffer();
+  private StringBuilder s = new StringBuilder();
 
   public PathBuilder() { }
 
