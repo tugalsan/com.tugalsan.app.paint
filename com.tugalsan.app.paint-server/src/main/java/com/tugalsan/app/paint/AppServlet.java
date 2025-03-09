@@ -28,7 +28,7 @@ public class AppServlet implements ServletContextListener {
     public void contextInitialized(ServletContextEvent evt) {
         APP_NAME = TS_TomcatPathUtils.getWarNameLabel(evt);
         TS_LogUtils.MAP = txt -> TGS_StringUtils.cmn().concat("[", APP_NAME, "] ", txt);
-        var contextKillTrigger = TS_SURLWebServlet.killTrigger = TS_ThreadSyncTrigger.of();
+        var contextKillTrigger = TS_SURLWebServlet.killTrigger = TS_ThreadSyncTrigger.of(APP_NAME);
         var appName = TS_TomcatPathUtils.getWarNameLabel(evt);
         var pathServletConfig = TS_LibBootPathUtils.dirDat().value().resolve("cfg").resolve(appName);
         var u_sConfig = TS_SGWTConfig.of(pathServletConfig, appName);
