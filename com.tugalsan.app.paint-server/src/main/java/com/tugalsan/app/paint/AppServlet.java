@@ -37,7 +37,7 @@ public class AppServlet implements ServletContextListener {
             return;
         }
         TS_SGWTWebServlet.config = u_sConfig.value();
-        TS_LibBootUtils.contextInitializedAsyncRun(contextKillTrigger,
+        TS_LibBootUtils.contextInitializedAsyncRun(contextKillTrigger.newChild("contextInitialized"),
                 Duration.ofMinutes(10),
                 evt, "autosqlweb", "ASW",
                 favIconSpi, favIconBug,
