@@ -2,14 +2,7 @@ package com.tugalsan.app.paint;
 
 import com.tugalsan.api.file.common.client.TGS_FileCommonFavIcon;
 import com.tugalsan.api.log.server.TS_Log;
-import com.tugalsan.api.log.server.TS_LogUtils;
 import com.tugalsan.api.servlet.gwt.server.*;
-import com.tugalsan.api.servlet.url.server.TS_SURLWebServlet;
-import com.tugalsan.api.string.client.TGS_StringUtils;
-import com.tugalsan.api.thread.server.sync.TS_ThreadSyncTrigger;
-import com.tugalsan.api.tomcat.server.TS_TomcatPathUtils;
-import com.tugalsan.app.paint.AppSGEEcho;
-import com.tugalsan.lib.boot.server.TS_LibBootPathUtils;
 import com.tugalsan.lib.boot.server.TS_LibBootUtils;
 import java.time.Duration;
 import javax.servlet.ServletContextEvent;
@@ -31,7 +24,7 @@ public class AppServlet implements ServletContextListener {
                 Duration.ofMinutes(10),
                 evt, "autosqlweb", "ASW",
                 favIconSpi, favIconBug,
-                killTrigger -> {
+                kt -> {
                     TS_SGWTExecutorList.add(new AppSGEEcho()
                     );
                 }
