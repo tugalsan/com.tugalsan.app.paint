@@ -2,7 +2,7 @@ package com.tugalsan.app.paint;
 
 import com.google.gwt.user.client.ui.*;
 import com.tugalsan.api.file.html.client.*;
-import com.tugalsan.api.function.client.maythrow.uncheckedexceptions.TGS_FuncMTU;
+import com.tugalsan.api.function.client.maythrowexceptions.unchecked.TGS_FuncMTU;
 import com.tugalsan.api.gui.client.click.*;
 import com.tugalsan.api.gui.client.focus.*;
 import com.tugalsan.api.gui.client.key.*;
