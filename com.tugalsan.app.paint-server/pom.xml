@@ -81,7 +81,7 @@
                 </executions>
                 <configuration>
                     <executable>java</executable>
-                    <commandlineArgs>-jar C:\Users\me\.m2\repository\org\apache\tomcat\jakartaee-migration\1.0.10-SNAPSHOT\jakartaee-migration-1.0.10-SNAPSHOT-shaded.jar C:/git/app/com.tugalsan.app.paint/com.tugalsan.app.paint-server/target/war/app-paint.war C:/bin/tomcat/home/webapps/app-paint.war</commandlineArgs>
+                    <commandlineArgs>-jar C:\git\trm\com.tugalsan.trm.migration.jakarta\target\com.tugalsan.trm.migration.jakarta-1.0.10-SNAPSHOT-shaded.jar C:/git/app/com.tugalsan.app.paint/com.tugalsan.app.paint-server/target/war/app-paint.war C:/bin/tomcat/home/webapps/app-paint.war</commandlineArgs>
                 </configuration>
             </plugin>
         </plugins>
