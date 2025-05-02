@@ -33,7 +33,7 @@ public class App implements EntryPoint {
                     TGC_ClickUtils.add(btn, () -> TGC_BrowserWindowUtils.openSame(
                             route.setRouteApp(TGS_LibScaleMemUtils.cloud()).delMdl().toUrl())
                     );
-                    TGC_LibBootGUIBody.setToCenter(btn);
+                    TGC_LibBootGUIBodyStatic.setToCenter(btn);
                     d.ce("onModuleLoad", "loginCard", err);
                     return;
                 }
