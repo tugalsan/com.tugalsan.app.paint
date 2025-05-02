@@ -94,7 +94,7 @@ public class AppModuleDefault extends TGC_LibBootModulePanel {
 
     @Override
     public void configLayout() {
-        TGC_LibBootGUIBodyStatic.buttonHolderCenter.add(tbInput);
+        TGC_LibBootGUIBody.buttonHolderCenter.add(tbInput);
 
         scroll.setWidget(pnlCards);
         TGC_ScrollUtils.addScrollToTop(scroll);
