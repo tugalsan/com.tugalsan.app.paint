@@ -1,5 +1,5 @@
 module com.tugalsan.app.paint.shared {
-    requires gwt.user;
+    requires gwt.servlet.jakarta;
     requires com.tugalsan.api.servlet.gwt;
     requires com.tugalsan.lib.rql;
     exports com.tugalsan.app.paint.sg;

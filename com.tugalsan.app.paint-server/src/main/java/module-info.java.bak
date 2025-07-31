@@ -1,6 +1,6 @@
 module com.tugalsan.app.paint.server {
+    requires gwt.servlet.jakarta;
     requires com.tugalsan.app.paint.shared;
-    requires javax.servlet.api;
     requires com.tugalsan.api.tuple;
     requires com.tugalsan.api.tomcat;
     requires com.tugalsan.api.thread;
